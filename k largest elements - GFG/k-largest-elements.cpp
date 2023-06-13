@@ -12,10 +12,13 @@ public:
 	    // code here
 	    sort(arr,arr+n);
 	    vector<int>temp;
-	    for(int i =n-k;i<n;i++){
-	        temp.push_back(arr[i]);
-	    }
-	    sort(temp.begin(),temp.end(),greater<int>());
+	while(k>0)
+	{
+	    temp.push_back(arr[n-1]);
+	    n--;
+	    k--;
+	}
+	  //  sort(temp.begin(),temp.end(),greater<int>());
 	    return temp;
 	}
 
